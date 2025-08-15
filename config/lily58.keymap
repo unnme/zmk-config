@@ -21,11 +21,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                        &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp MINUS
-&kp TAB     &kp Q         &kp W         &kp E         &kp R         &kp T                               &kp Y         &kp U         &kp I         &kp O         &kp P         &kp BACKSLASH
-&kp LSHIFT  &kp A         &kp S         &kp D         &kp F         &kp G                               &kp H         &kp J         &kp K         &kp L         &kp SEMI      &kp SQT
-&kp LCTRL   &kp Z         &kp X         &kp C         &kp V         &kp B         &kp LBKT    &kp RBKT  &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp CAPSLOCK
-                                        &kp LALT      &kp LCMD      &kp SPACE     &mo 1       &mo 2     &kp BSPC      &kp ENTER     &mo 3
+&kp ESC     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                        &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &none
+&kp TAB     &kp Q         &kp W         &kp E         &kp R         &kp T                               &kp Y         &kp U         &kp I         &kp O         &kp P         &none
+&kp LSHIFT  &kp A         &kp S         &kp D         &kp F         &kp G                               &kp H         &kp J         &kp K         &kp L         &none         &kp RIGHT_SHIFT
+&kp LCTRL   &kp Z         &kp X         &kp C         &kp V         &kp B         &kp LBKT    &kp RBKT  &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp ENTER
+                                        &kp LALT      &kp LCMD      &kp SPACE     &mo 1       &mo 2     &kp BSPC      &kp CAPSLOCK  &mo 3
             >;
         };
 
@@ -38,10 +38,10 @@
             //                       |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp TILDE  &none              &none                 &none                  &none      &none                             &none            &none            &none            &none            &none            &none
-&kp GRAVE  &kp UNDERSCORE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &none      &none                             &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MULTIPLY  &none
-&trans     &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON  &kp SEMICOLON                     &kp KP_MINUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &none
-&trans     &kp SINGLE_QUOTE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SLASH  &kp BACKSLASH  &kp PIPE    &none  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp KP_EQUAL
+&kp TILDE  &none              &none                 &none                  &none      &none                             &kp KP_EQUAL     &none            &none            &none            &none            &none
+&kp GRAVE  &kp UNDERSCORE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS  &kp EQUAL                         &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MULTIPLY  &none
+&trans     &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON  &kp SEMICOLON                     &kp KP_MINUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &trans
+&trans     &kp SINGLE_QUOTE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SLASH  &kp BACKSLASH  &kp PIPE    &none  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &trans
                                                     &trans                 &trans     &trans         &none       &none  &trans           &trans           &none
             >;
         };
@@ -57,7 +57,7 @@
             bindings = <
 &none   &trans  &trans  &trans  &trans  &trans                  &trans          &trans          &trans        &trans           &trans   &none
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                  &kp F7          &kp F8          &kp F9        &kp F10          &kp F11  &kp F12
-&trans  &none   &none   &none   &none   &none                   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none    &none
+&trans  &none   &none   &none   &none   &none                   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none    &trans
 &trans  &none   &none   &none   &none   &none   &none    &none  &none           &none           &none         &none            &none    &trans
                         &trans  &trans  &trans  &none    &none  &trans          &trans          &none
             >;
